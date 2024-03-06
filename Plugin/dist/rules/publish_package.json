@@ -1,0 +1,26 @@
+[
+    {
+        "action": "copy",
+        "config": "Release",
+        "params": [
+            "{dist}\\*.dll",
+            "{dist}\\nativePC\\plugins\\"
+        ]
+    },
+    {
+        "action": "copy",
+        "config": "Release",
+        "params": [
+            "{dist}\\*.toml",
+            "{dist}\\nativePC\\plugins\\"
+        ]
+    },
+    {
+        "action": "package",
+        "config": "Release",
+        "params": [
+            "{dist}\\nativePC\\",
+            "{dist}\\{project_name}.v{project_version}.zip"
+        ]
+    }
+]
